@@ -1,0 +1,115 @@
+{
+  "app_title": "Game Diary",
+
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "nickname": "Nickname",
+    "login_button": "Sign in",
+    "register_button": "Sign up",
+    "no_account": "Don't have an account? Register",
+    "error_login": "Login failed",
+    "error_register": "Registration failed"
+  },
+
+  "nav": {
+    "for_you": "For you",
+    "games": "Games",
+    "journal": "My diary",
+    "admin_panel": "Admin panel"
+  },
+
+  "for_you": {
+    "title": "For you",
+    "no_games": "No more games to show",
+    "button_dislike": "Not interested",
+    "button_like": "Want to play"
+  },
+
+  "profile": {
+    "title": "My profile",
+    "tab_planned": "Planned",
+    "tab_playing": "Playing",
+    "tab_finished": "Finished"
+  },
+
+  "game": {
+    "details_title": "Game details",
+    "description": "Description",
+    "your_settings": "Your settings",
+    "status": "Status",
+    "status_planned": "Planned",
+    "status_playing": "Playing",
+    "status_finished": "Finished",
+    "rating": "Rating (0–10)",
+    "note": "Note (optional)",
+    "save": "Save",
+    "save_with_status": "Save ({status})",
+    "error_loading": "Error loading game",
+    "no_description": "No description for this game.",
+    "not_exists": "Game does not exist"
+  },
+
+  "games": {
+    "search_title": "Search by title",
+    "filter_year": "Year",
+    "filter_genre": "Genre",
+    "filter_platform": "Platform",
+    "all_years": "All years",
+    "all_genres": "All genres",
+    "all_platforms": "All platforms",
+    "error_loading": "Error loading games",
+    "no_games": "No games found",
+    "game_deleted": "Game deleted"
+  },
+
+  "admin": {
+    "title": "Admin panel – games",
+    "seed_tooltip": "Seed – add sample games",
+    "seed_success": "Sample games added to database",
+    "no_access": "No admin permissions",
+    "error_loading": "Error loading games",
+    "no_games": "No games"
+  },
+
+  "edit_game": {
+    "title_add": "Add game",
+    "title_edit": "Edit game",
+    "label_title": "Title",
+    "label_year": "Year",
+    "label_genre": "Genre",
+    "label_platforms": "Platforms (e.g. PC, PS5)",
+    "label_cover_url": "Cover URL (link to cover image)",
+    "label_description": "Description",
+    "button_add": "Add",
+    "button_save": "Save",
+    "error_save": "Error saving game"
+  },
+
+  "main": {
+    "games": "Games",
+    "journal": "My diary",
+    "logout_tooltip": "Logout"
+  },
+
+  "common": {
+    "error_journal": "Error loading diary.",
+    "no_games_category": "No games in this category.",
+    "loading": "Loading...",
+    "diary_updated": "Game settings saved"
+  },
+
+  "settings": {
+    "section_title": "Appearance",
+    "theme": "Theme",
+    "theme_system": "System",
+    "theme_light": "Light",
+    "theme_dark": "Dark",
+    "font_size": "Font size",
+    "language": "Language",
+    "language_pl": "Polski",
+    "language_en": "English"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "app_title": "Game Diary",
+
+  "auth": {
+    "login": "Logowanie",
+    "register": "Rejestracja",
+    "email": "Email",
+    "password": "Hasło",
+    "nickname": "Nick",
+    "login_button": "Zaloguj",
+    "register_button": "Zarejestruj",
+    "no_account": "Nie masz konta? Zarejestruj się",
+    "error_login": "Nie udało się zalogować",
+    "error_register": "Nie udało się zarejestrować"
+  },
+
+  "for_you": {
+    "title": "Dla Ciebie",
+    "no_games": "Brak kolejnych gier do wyświetlenia",
+    "button_dislike": "Nie interesuje mnie",
+    "button_like": "Chcę zagrać"
+  },
+  
+  "nav": {
+    "for_you": "Dla Ciebie",
+    "games": "Gry",
+    "journal": "Mój dziennik",
+    "admin_panel": "Panel admina"
+  },
+
+  "profile": {
+    "title": "Mój profil",
+    "tab_planned": "Chcę zagrać",
+    "tab_playing": "Gram",
+    "tab_finished": "Ukończone"
+  },
+
+  "game": {
+    "details_title": "Szczegóły gry",
+    "description": "Opis",
+    "your_settings": "Twoje ustawienia",
+    "status": "Status",
+    "status_planned": "Chcę zagrać",
+    "status_playing": "Gram",
+    "status_finished": "Ukończona",
+    "rating": "Ocena (0–10)",
+    "note": "Notatka (opcjonalnie)",
+    "save": "Zapisz",
+    "save_with_status": "Zapisz ({status})",
+    "error_loading": "Błąd ładowania gry",
+    "no_description": "Brak opisu tej gry.",
+    "not_exists": "Gra nie istnieje"
+  },
+
+  "games": {
+    "search_title": "Szukaj po tytule",
+    "filter_year": "Rok",
+    "filter_genre": "Gatunek",
+    "filter_platform": "Platforma",
+    "all_years": "Wszystkie lata",
+    "all_genres": "Wszystkie gatunki",
+    "all_platforms": "Wszystkie platformy",
+    "error_loading": "Błąd ładowania gier", 
+    "game_deleted": "Gra usunięta"
+  },
+
+  "admin": {
+    "title": "Panel admina – gry",
+    "seed_tooltip": "Seed – dodaj przykładowe gry",
+    "seed_success": "Dodano przykładowe gry do bazy",
+    "no_access": "Brak uprawnień admina",
+    "error_loading": "Błąd ładowania gier",
+    "no_games": "Brak gier"
+  },
+
+  "edit_game": {
+    "title_add": "Dodaj grę",
+    "title_edit": "Edytuj grę",
+    "label_title": "Tytuł",
+    "label_year": "Rok",
+    "label_genre": "Gatunek",
+    "label_platforms": "Platformy (np. PC, PS5)",
+    "label_cover_url": "Cover URL (link do okładki)",
+    "label_description": "Opis",
+    "button_add": "Dodaj",
+    "button_save": "Zapisz",
+    "error_save": "Błąd zapisu gry"
+  },
+
+  "main": {
+    "games": "Gry",
+    "journal": "Mój dziennik",
+    "logout_tooltip": "Wyloguj"
+  },
+
+  "common": {
+    "error_journal": "Błąd ładowania dziennika.",
+    "no_games_category": "Brak gier w tej kategorii.",
+    "loading": "Ładowanie...",
+    "diary_updated": "Zapisano ustawienia gry"
+  },
+
+  "settings": {
+    "section_title": "Wygląd",
+    "theme": "Motyw",
+    "theme_system": "Systemowy",
+    "theme_light": "Jasny",
+    "theme_dark": "Ciemny",
+    "font_size": "Rozmiar czcionki",
+    "language": "Język",
+    "language_pl": "Polski",
+    "language_en": "English"
+  }
+  
+}
