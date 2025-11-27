@@ -12,7 +12,20 @@
           "package_name": "com.example.game_diary"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "835275258842-olta4k203lo1p8sd2k65uf3r5d5s2hvq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.game_diary",
+            "certificate_hash": "c58931050e51cbb529b41847799c8dcecbbef9ae"
+          }
+        },
+        {
+          "client_id": "835275258842-rep0atvbt43im9e2j6oefkpmshmiq814.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBZznRTZiGyllK-1F3LHg6RPxcClftuzfE"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835275258842-rep0atvbt43im9e2j6oefkpmshmiq814.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "835275258842-a5kaqcq1dmvmk0c0ghaqa6t4b3mo8mio.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.gameDiary"
+              }
+            }
+          ]
         }
       }
     }
