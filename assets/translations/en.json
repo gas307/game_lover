@@ -2,22 +2,33 @@
   "app_title": "Game Diary",
 
   "auth": {
-    "login": "Login",
-    "register": "Register",
+    "login_title": "Sign in",
+    "login_subtitle": "Welcome back to your game diary",
     "email": "Email",
     "password": "Password",
-    "nickname": "Nickname",
     "login_button": "Sign in",
-    "register_button": "Sign up",
-    "no_account": "Don't have an account? Register",
-    "error_login": "Login failed",
-    "error_register": "Registration failed"
+    "no_account": "Don’t have an account?",
+    "register_link": "Register",
+    "error_email_required": "Please enter your email",
+    "error_email_invalid": "Invalid email address",
+    "error_password_required": "Please enter your password",
+    "error_password_short": "Password must be at least 6 characters",
+    "login_google": "Continue with Google",
+    "error_google_signin": "Could not sign in with Google.",
+    "register_title": "Create account",
+    "register_subtitle": "Join your game diary",
+    "register_button": "Register",
+    "repeat_password": "Repeat password",
+    "error_password_mismatch": "Passwords do not match",
+    "have_account": "Already have an account?",
+    "login_link": "Sign in"
   },
 
   "nav": {
     "for_you": "For you",
     "games": "Games",
     "journal": "My diary",
+    "settings": "Settings",
     "admin_panel": "Admin panel"
   },
 
@@ -25,14 +36,25 @@
     "title": "For you",
     "no_games": "No more games to show",
     "button_dislike": "Not interested",
-    "button_like": "Want to play"
+    "button_like": "Want to play",
+    "button_undo": "Undo"
   },
 
   "profile": {
     "title": "My profile",
     "tab_planned": "Planned",
     "tab_playing": "Playing",
-    "tab_finished": "Finished"
+    "tab_finished": "Finished",
+    "login_to_see_diary": "Log in to view your game diary.",
+    "subtitle": "Your game diary",
+    "error_loading": "Error loading your diary.",
+    "empty_section": "No games in this category yet.",
+    "games_label": "games",
+    "stat_planned": "Planned",
+    "stat_playing": "Playing",
+    "stat_finished": "Finished",
+    "progress": "Completion progress",
+    "avg_rating": "Average rating"
   },
 
   "game": {
@@ -43,13 +65,27 @@
     "status_planned": "Planned",
     "status_playing": "Playing",
     "status_finished": "Finished",
-    "rating": "Rating (0–10)",
-    "note": "Note (optional)",
+    "rating": "Rating",
+    "note": "Review",
     "save": "Save",
-    "save_with_status": "Save ({status})",
+    "saved": "Game settings saved",
+    "community_rating": "Community rating",
+    "save_with_status": "Save",
     "error_loading": "Error loading game",
     "no_description": "No description for this game.",
-    "not_exists": "Game does not exist"
+    "not_exists": "Game does not exist",
+    "your_diary": "Your diary",
+    "status_label": "Status",
+    "status_not_interested": "Not interested",
+    "your_rating": "Your rating",
+    "your_note": "Your note",
+    "your_note_hint": "Add your thoughts about this game...",
+    "save_button": "Save to diary",
+    "saved_to_diary": "Saved to your diary",
+    "login_to_save": "Log in to save this game to your diary.",
+    "read_more": "Show more",
+    "read_less": "Show less",
+    "note_hint": "Add your own thoughts about this game"
   },
 
   "games": {
@@ -62,7 +98,8 @@
     "all_platforms": "All platforms",
     "error_loading": "Error loading games",
     "no_games": "No games found",
-    "game_deleted": "Game deleted"
+    "game_deleted": "Game deleted",
+    "filters_title": "Filters"
   },
 
   "admin": {

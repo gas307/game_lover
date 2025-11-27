@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:phosphor_flutter/phosphor_flutter.dart';
 
 import '../../core/di/service_locator.dart';
 import '../games/for_you_screen.dart';
 import '../games/games_list_screen.dart';
-import '../games/admin_games_screen.dart';
 import '../profile/profile_screen.dart';
+import '../settings/settings_screen.dart';
 
 class MainShell extends StatefulWidget {
   const MainShell({super.key});
@@ -17,31 +18,6 @@ class MainShell extends StatefulWidget {
 
 class _MainShellState extends State<MainShell> {
   int _currentIndex = 0;
-  bool _isAdmin = false;
-  bool _adminLoaded = false;
-
-  @override
-  void initState() {
-    super.initState();
-    _loadAdminFlag();
-  }
-
-  Future<void> _loadAdminFlag() async {
-    final user = authRepository.currentUser;
-    if (user == null) {
-      setState(() {
-        _isAdmin = false;
-        _adminLoaded = true;
-      });
-      return;
-    }
-
-    final isAdminFlag = await usersRepository.isAdmin(user.uid);
-    setState(() {
-      _isAdmin = isAdminFlag;
-      _adminLoaded = true;
-    });
-  }
 
   String _titleForIndex(int index) {
     switch (index) {
@@ -65,32 +41,48 @@ class _MainShellState extends State<MainShell> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(_titleForIndex(_currentIndex)),
+        title: Text(
+          _titleForIndex(_currentIndex),
+          style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                fontWeight: FontWeight.w700,
+              ),
+        ),
+        centerTitle: false,
         actions: [
-          if (_adminLoaded && _isAdmin)
-            IconButton(
-              icon: const Icon(Icons.admin_panel_settings),
-              tooltip: 'nav.admin_panel'.tr(),
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (_) => const AdminGamesScreen(),
-                  ),
-                );
-              },
-            ),
           IconButton(
-            icon: const Icon(Icons.logout),
+            icon: const Icon(PhosphorIconsBold.gearSix),
+            tooltip: 'nav.settings'.tr(),
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => const SettingsScreen(),
+                ),
+              );
+            },
+          ),
+          IconButton(
+            icon: const Icon(PhosphorIconsBold.signOut),
             onPressed: () async {
               await authRepository.signOut();
-              // AuthWrapper sam przełączy na ekran logowania
             },
           ),
         ],
       ),
-      body: IndexedStack(
-        index: _currentIndex,
-        children: screens,
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              Theme.of(context).colorScheme.surface,
+              Theme.of(context).colorScheme.surfaceVariant.withOpacity(0.5),
+            ],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+          ),
+        ),
+        child: IndexedStack(
+          index: _currentIndex,
+          children: screens,
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
@@ -99,15 +91,15 @@ class _MainShellState extends State<MainShell> {
         },
         items: [
           BottomNavigationBarItem(
-            icon: const Icon(Icons.whatshot),
+            icon: const Icon(PhosphorIconsBold.fire),
             label: 'nav.for_you'.tr(),
           ),
           BottomNavigationBarItem(
-            icon: const Icon(Icons.videogame_asset),
+            icon: const Icon(PhosphorIconsBold.gameController),
             label: 'nav.games'.tr(),
           ),
           BottomNavigationBarItem(
-            icon: const Icon(Icons.book),
+            icon: const Icon(PhosphorIconsBold.bookOpenText),
             label: 'nav.journal'.tr(),
           ),
         ],

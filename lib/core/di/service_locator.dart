@@ -3,10 +3,11 @@ import 'package:firebase_auth/firebase_auth.dart';
 
 import '../repositories/auth_repository.dart';
 import '../repositories/users_repository.dart';
-import '../repositories/games_repository.dart';
 import '../repositories/user_games_repository.dart';
 
-final authRepository = AuthRepository(FirebaseAuth.instance);
-final usersRepository = UsersRepository(FirebaseFirestore.instance);
-final gamesRepository = GamesRepository(FirebaseFirestore.instance);
-final userGamesRepository = UserGamesRepository(FirebaseFirestore.instance);
+final firebaseAuth = FirebaseAuth.instance;
+final firestore = FirebaseFirestore.instance;
+
+final authRepository = AuthRepository(firebaseAuth);
+final usersRepository = UsersRepository(firestore);
+final userGamesRepository = UserGamesRepository(firestore);

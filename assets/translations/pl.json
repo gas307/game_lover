@@ -2,29 +2,41 @@
   "app_title": "Game Diary",
 
   "auth": {
-    "login": "Logowanie",
-    "register": "Rejestracja",
-    "email": "Email",
+    "login_title": "Zaloguj się",
+    "login_subtitle": "Wróć do swojego dziennika gier",
+    "email": "E-mail",
     "password": "Hasło",
-    "nickname": "Nick",
     "login_button": "Zaloguj",
+    "no_account": "Nie masz konta?",
+    "register_link": "Zarejestruj się",
+    "error_email_required": "Podaj adres e-mail",
+    "error_email_invalid": "Nieprawidłowy adres e-mail",
+    "error_password_required": "Podaj hasło",
+    "error_password_short": "Hasło musi mieć co najmniej 6 znaków",
+    "login_google": "Kontynuuj z Google",
+    "error_google_signin": "Nie udało się zalogować przez Google.",
+    "register_title": "Załóż konto",
+    "register_subtitle": "Dołącz do dziennika gier",
     "register_button": "Zarejestruj",
-    "no_account": "Nie masz konta? Zarejestruj się",
-    "error_login": "Nie udało się zalogować",
-    "error_register": "Nie udało się zarejestrować"
+    "repeat_password": "Powtórz hasło",
+    "error_password_mismatch": "Hasła nie są takie same",
+    "have_account": "Masz już konto?",
+    "login_link": "Zaloguj się"
   },
 
   "for_you": {
     "title": "Dla Ciebie",
     "no_games": "Brak kolejnych gier do wyświetlenia",
     "button_dislike": "Nie interesuje mnie",
-    "button_like": "Chcę zagrać"
+    "button_like": "Chcę zagrać",
+    "button_undo": "Cofnij"
   },
-  
+
   "nav": {
     "for_you": "Dla Ciebie",
     "games": "Gry",
     "journal": "Mój dziennik",
+    "settings": "Ustawienia",
     "admin_panel": "Panel admina"
   },
 
@@ -32,24 +44,48 @@
     "title": "Mój profil",
     "tab_planned": "Chcę zagrać",
     "tab_playing": "Gram",
-    "tab_finished": "Ukończone"
+    "tab_finished": "Ukończone",
+    "login_to_see_diary": "Zaloguj się, aby zobaczyć swój dziennik gier.",
+    "subtitle": "Twój dziennik gier",
+    "error_loading": "Błąd ładowania dziennika.",
+    "empty_section": "Brak gier w tej kategorii.", 
+    "games_label": "gier",
+    "stat_planned": "Chcę zagrać",
+    "stat_playing": "Gram",
+    "stat_finished": "Ukończone",
+    "progress": "Postęp ukończenia",
+    "avg_rating": "Średnia ocena"
   },
 
   "game": {
     "details_title": "Szczegóły gry",
     "description": "Opis",
-    "your_settings": "Twoje ustawienia",
+    "your_settings": "Twoje doświadczenia",
     "status": "Status",
     "status_planned": "Chcę zagrać",
     "status_playing": "Gram",
     "status_finished": "Ukończona",
-    "rating": "Ocena (0–10)",
-    "note": "Notatka (opcjonalnie)",
+    "rating": "Ocena",
+    "note": "Recenzja",
     "save": "Zapisz",
-    "save_with_status": "Zapisz ({status})",
+    "saved": "Zapisano ustawienia gry",
+    "community_rating": "Ocena społeczności",
+    "save_with_status": "Zapisz",
     "error_loading": "Błąd ładowania gry",
     "no_description": "Brak opisu tej gry.",
-    "not_exists": "Gra nie istnieje"
+    "not_exists": "Gra nie istnieje",
+    "your_diary": "Twój dziennik",
+    "status_label": "Status",
+    "status_not_interested": "Nie interesuje mnie",
+    "your_rating": "Twoja ocena",
+    "your_note": "Twoja notatka",
+    "your_note_hint": "Dodaj swoje wrażenia z gry...",
+    "save_button": "Zapisz w dzienniku",
+    "saved_to_diary": "Zapisano w Twoim dzienniku",
+    "login_to_save": "Zaloguj się, aby zapisać tę grę w swoim dzienniku.",
+    "read_more": "Pokaż więcej",
+    "read_less": "Pokaż mniej",
+    "note_hint": "Dodaj własne wrażenia z gry"
   },
 
   "games": {
@@ -61,7 +97,9 @@
     "all_genres": "Wszystkie gatunki",
     "all_platforms": "Wszystkie platformy",
     "error_loading": "Błąd ładowania gier", 
-    "game_deleted": "Gra usunięta"
+    "game_deleted": "Gra usunięta",
+    "no_games": "Nie znaleziono gier",
+    "filters_title": "Filtry"
   },
 
   "admin": {
